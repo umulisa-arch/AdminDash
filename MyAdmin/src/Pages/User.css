@@ -1,0 +1,39 @@
+.search{
+    margin-left: 170px;
+    margin-bottom: -20px;
+}
+.h2user{
+    margin-left: 100%;
+    margin-bottom: 20%;
+    
+    background-color: #4D2D4A;
+    color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+
+}
+.input{
+    margin-left: 100%;
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+}
+th{
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #151515; /* Adjust the color as needed */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Optional: Add a background color to header cells */
+  }

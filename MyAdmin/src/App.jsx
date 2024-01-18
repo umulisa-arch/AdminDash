@@ -10,6 +10,7 @@ import Generatereport from './Pages/GenerateReport'
 import Sidebar from './Components/Sidebar'
 import Dashboard from './Pages/Dashboard'
 import 'aos/dist/aos.css';
+import Test from './Components/test'
 // import AOS from 'aos';
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/users" element={<Users/>}/>
         <Route path="/citizen" element={<Citizen/>}/>
         <Route path="/generateReport" element={<Generatereport/>}/>
+        <Route path="/test" element={<Test/>}/>
       </Routes>
       </Sidebar>
       </BrowserRouter>

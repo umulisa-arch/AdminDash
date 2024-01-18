@@ -1,6 +1,6 @@
 import  { children, useState } from 'react'
 import { MdMenu } from "react-icons/md";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaUser } from 'react-icons/fa'
 import { IoNotificationsOutline } from "react-icons/io5";
 import { RiGroupLine } from "react-icons/ri";
@@ -51,7 +51,9 @@ import { FaUserPlus } from "react-icons/fa";
     
         if (confirmLogout) {
           // Redirect to the login page
-          window.location.href = '/login'; // Replace '/login' with your actual login page URL
+          window.location.href = '/Test';
+           // Replace '/login' with your actual login page URL
+        //   <Link to="/test">Go to Login Page</Link>
         }
         // If the user clicks "Cancel" in the confirmation dialog, do nothing
       };
@@ -63,7 +65,7 @@ import { FaUserPlus } from "react-icons/fa";
     <div className='container'>
         <div className="sidebar">
             <div className="topsection">
-                <h1 style={{display: isOpen ? "block" : "none"}}  className='logo'>Logo</h1>
+                <h4 style={{display: isOpen ? "block" : "none"}}  className='logo'> <img className='logodashboard' src="../logo2.png" alt="" /> </h4>
                 <div   className="bars">
                 <MdMenu onClick={toggle}  className='menu'/>
                 </div>

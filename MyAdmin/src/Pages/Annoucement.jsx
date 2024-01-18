@@ -11,7 +11,7 @@ import AOS from 'aos';
 
   return (
     <div className='div1announce'><h2 data-aos="fade-right" className='h1Announce'>Annoucement</h2>
-    <form data-aos="fade-up" action="#" method=''>
+    <form data-aos="fade-up" action="#" method='GET'>
         <input type="date" placeholder='date '/><br /> <br />
         <input type="text" placeholder='title of message' /><br /> <br />
         <textarea name="Message" id="textmessage" cols="30" rows="10" placeholder='Type your messsage here...'></textarea><br /><br />

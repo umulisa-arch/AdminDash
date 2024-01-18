@@ -55,3 +55,18 @@ main{
 .icon, .linktext{
   font-size: 20px;
 }
+.logoutadmin{
+  padding: 10px 30px;
+  margin-top: 50%;
+  border-radius: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+.logoutadmin:hover{
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+

@@ -9,6 +9,9 @@ import Citizen from './Pages/Citizen'
 import Generatereport from './Pages/GenerateReport'
 import Sidebar from './Components/Sidebar'
 import Dashboard from './Pages/Dashboard'
+import 'aos/dist/aos.css';
+// import AOS from 'aos';
+
 
 function App() {
 

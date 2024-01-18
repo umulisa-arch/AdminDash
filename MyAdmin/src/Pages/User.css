@@ -1,6 +1,6 @@
 .search{
     margin-left: 170px;
-    margin-bottom: -20px;
+    margin-bottom: -100px;
 }
 .h2user{
     margin-left: 100%;
@@ -26,6 +26,7 @@ th{
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-left: 100%;
   }
   
   th, td {
@@ -37,3 +38,39 @@ table {
   th {
     background-color: #f2f2f2; /* Optional: Add a background color to header cells */
   }
+  .h2citizen{
+    margin-left: 100%;
+    margin-bottom: 20%;
+    
+    background-color: #4D2D4A;
+    color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+
+
+  }
+  .actionicons{
+    display: flex;
+    gap: 5px;
+  }
+  .actionicons{
+    display: flex
+  }
+
+  /* seach css */
+  .search-container {
+    position: relative;
+}
+
+.input {
+    padding-right: 30px; /* Adjust the padding to accommodate the icon */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 370px; /* Adjust the right distance of the icon */
+    transform: translateY(-50%);
+}

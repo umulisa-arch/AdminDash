@@ -6,7 +6,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { RiGroupLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
 
-import { FaRegUser  } from "react-icons/fa"
+import { FaUserPlus } from "react-icons/fa";
 
  const Sidebar = ({children}) =>{
     const[isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ import { FaRegUser  } from "react-icons/fa"
         {
             path:"/register",
             name:"Register",
-            icon:<FaRegUser/>
+            icon:<FaUserPlus />
         },
         {
             path:"/announcement",
@@ -40,10 +40,24 @@ import { FaRegUser  } from "react-icons/fa"
         },
         {
             path:"/generateReport",
-            name:"Generatereport",
+            name:"Generate Report",
             icon: <BsBarChartLineFill />
         },
     ]
+
+    //button js handler
+    const handleLogout = () => {
+        const confirmLogout = window.confirm('Are you sure you want to log out?');
+    
+        if (confirmLogout) {
+          // Redirect to the login page
+          window.location.href = '/login'; // Replace '/login' with your actual login page URL
+        }
+        // If the user clicks "Cancel" in the confirmation dialog, do nothing
+      };
+
+      //button js handler ends here
+    
   return (
     
     <div className='container'>
@@ -62,7 +76,9 @@ import { FaRegUser  } from "react-icons/fa"
                 </NavLink>  
                 ))
             }
+            <div title='Log out of the system'><input type="button" value="Logout" className='logoutadmin' onClick={handleLogout}/></div>
         </div>
+        
         <main>{children}</main>
         
     </div>

@@ -5,6 +5,7 @@
 }
 .container{
   display: flex;
+  
 }
 main{
   width: 100px;
@@ -19,9 +20,10 @@ main{
   background-color: #4D2D4A;
   padding: 0 40px;
   color: white;
-  height: 100vh;
+  height: 130vh;
   width: 300px;
   transition: all 0.5s;
+  position: relative;
 }
 .topsection{
   display: flex;
@@ -35,13 +37,19 @@ main{
   display: flex;
   font-size: 25px;
   margin-left: 50px;
+  background-color: rgb(173, 173, 194);
+  padding: 40px;
+  margin-left: 20px;
+  border-radius: 50%;
+  
 }
 .link{
   display: flex;
   color: white;
-  padding: 5px 15px;
+  padding: 20px 15px;
   gap: 15px;
   transition: all 0.5s;
+  font-weight: 500; 
 
 }
 .link:hover{

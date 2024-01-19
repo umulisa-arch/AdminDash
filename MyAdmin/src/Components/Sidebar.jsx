@@ -5,6 +5,7 @@ import { FaUser } from 'react-icons/fa'
 import { IoNotificationsOutline } from "react-icons/io5";
 import { RiGroupLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
+import { FaRegUser } from "react-icons/fa";
 
 import { FaUserPlus } from "react-icons/fa";
 
@@ -12,11 +13,11 @@ import { FaUserPlus } from "react-icons/fa";
     const[isOpen, setIsOpen] = useState(false);
     const toggle = ()=>setIsOpen(!isOpen);
     const menuItem=[
-        {
-            path:"/",
-            name:"Dashboard",
-            icon:""
-        },
+        // {
+        //     path:"/",
+        //     name:"Dashboard",
+        //     icon:""
+        // },
         {
             path:"/register",
             name:"Register",
@@ -65,9 +66,9 @@ import { FaUserPlus } from "react-icons/fa";
     <div className='container'>
         <div className="sidebar">
             <div className="topsection">
-                <h4 style={{display: isOpen ? "block" : "none"}}  className='logo'> <img className='logodashboard' src="../logo2.png" alt="" /> </h4>
+                <h4 style={{display: isOpen ? "block" : "none"}}  className='logo'>  <img className='logodashboard' src="../logo2.png" alt="" /> </h4>
                 <div   className="bars">
-                <MdMenu onClick={toggle}  className='menu'/>
+                <FaRegUser size={60} />
                 </div>
             </div>
             {

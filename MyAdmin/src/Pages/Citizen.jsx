@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { IoIosSearch } from "react-icons/io";
 import { ImMenu2 } from "react-icons/im";
 import { GrView } from "react-icons/gr";
@@ -40,7 +41,12 @@ import AOS from 'aos';
                     agnesrukundo1198@gmail.com
                 </td>
                 <td>
-                <ImMenu2 />  
+                <Link to="/view-page" style={{ color: 'green' }}>
+               <GrView style={{ fontSize: '20px' }} />
+                </Link>
+                   <Link to="/edit-page" style={{ color: 'blue' }}>
+                  <MdModeEdit  style={{ fontSize: '20px' }}/></Link>
+                <FiDelete />
                 </td>
                 </tr>
                 <tr data-aos="fade-up">

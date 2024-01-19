@@ -11,6 +11,8 @@ import Sidebar from './Components/Sidebar'
 import Dashboard from './Pages/Dashboard'
 import 'aos/dist/aos.css';
 import Test from './Components/test'
+import ViewPage from './Pages/ViewPage';
+import Edit from './Pages/Edit'
 // import AOS from 'aos';
 
 
@@ -31,6 +33,9 @@ function App() {
         <Route path="/citizen" element={<Citizen/>}/>
         <Route path="/generateReport" element={<Generatereport/>}/>
         <Route path="/test" element={<Test/>}/>
+        <Route path="/view-page" element={<ViewPage/>} />
+        <Route path="/edit-page" element={<Edit/>} />
+
       </Routes>
       </Sidebar>
       </BrowserRouter>
